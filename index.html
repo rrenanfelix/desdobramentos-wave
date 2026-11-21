@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DESDOBRAMENTOS WAVE</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>DESDOBRAMENTOS WAVE <small id="upd"></small></h1>
+  <div class="fx" id="fx" title="Cotação BRL → ARS"></div>
+  <nav id="nav">
+    <button data-v="rodadas" class="on">Rodadas</button>
+    <button data-v="resumo">Resumo</button>
+    <button data-v="nova">+ Rodada</button>
+    <button data-v="conf">Config</button>
+    <span class="lang"><button data-l="pt" onclick="setLang('pt')" title="Português">PT</button><button data-l="es" onclick="setLang('es')" title="Español">ES</button></span>
+  </nav>
+</header>
+<main>
+  <section id="tiles" class="tiles"></section>
+  <section id="v-rodadas"></section>
+  <section id="v-resumo" class="hidden"></section>
+  <section id="v-nova" class="hidden"></section>
+  <section id="v-conf" class="hidden"></section>
+</main>
+<div id="toast" class="toast hidden"></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
